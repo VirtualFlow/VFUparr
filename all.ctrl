@@ -1,0 +1,30 @@
+# all.ctrl
+
+# Filee containing a list of smiles, seperated by newline characters
+SMILES_FILES=./DATA/smiles_all.txt
+
+# NUM_MOLS: Total number of molecules to be processed.
+# Must be an integer value.
+NUM_MOLS=10000000
+
+# RECEPTOR_LOCATION: The location of the receptor file.
+RECEPTOR_LOCATION=./DATA/docking_receptor.pdbqt
+
+# EXHAUSTIVENESS: The exhaustiveness setting for docking methods.
+EXHAUSTIVENESS=1
+
+# CENTER_X/Y/Z: Center coordinates for the docking box.
+CENTER_X=55.1225
+CENTER_Y=21.9145
+CENTER_Z=13.013
+
+# SIZE_X/Y/Z: Dimensions of the docking box.
+SIZE_X=11.033
+SIZE_Y=19.451
+SIZE_Z=17.534
+
+# MAX_NUM_JOBS: Maximum number of jobs to be executed in the array for conducting docking calculations.
+MAX_NUM_JOBS=999
+
+# Poses of Molecules with a docking score less than this value will be saved, else, to conserve space, the pose file will be deleted. 
+DOCKING_SCORE_THRESHOLD=-11.0
