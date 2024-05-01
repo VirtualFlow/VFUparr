@@ -42,7 +42,7 @@ SIZE_Z             = str( config_params.get("SIZE_Z"))
 SMILES_FILE        = str( config_params.get("SMILES_FILES"))
 MAX_NUM_JOBS       = config_params.get("MAX_NUM_JOBS")
 MAX_NUM_MOLS       = config_params.get("NUM_MOLS")
-DOCKING_SCORE_THRS = config_params.get("DOCKING_SCORE_THRESHOLD")
+DOCKING_SCORE_THRS = float(config_params.get("DOCKING_SCORE_THRESHOLD"))
 
 def generate_unique_file_name(base_name, extension):
     timestamp = int(time.time() * 1000)
